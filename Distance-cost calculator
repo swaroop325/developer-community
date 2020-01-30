@@ -1,0 +1,27 @@
+/*Program by Abdur Rahman*/
+/*This is a simple Distance -cost calculator*/
+#include<stdio.h>
+int main()
+{int choice;
+double d;
+float cost,pcpl=76.19,dcpl=70.16;/*The petrol and diesel prices in TN @30/01/2020*/
+printf("\nEnter the distance to be travelled in kilometres:");
+scanf("%2f",&d);
+printf("\n Choose the type of your vehicle\n1.petrol run(press 1)\n2.diesel run(press 2)");
+scanf("%d",&choice);
+switch (choice){
+case 1:cost=d*pcpl;
+break;
+case 2:cost=d*dcpl;
+break;
+default:printf("\n invalid input);
+break;
+}
+printf("\nThe trip will cost %f rupees for travelling a distance of %2f kilometres",cost,d);
+\*assuming that the fuel effieciency is 1litre per kilometre*\
+return 0;
+}
+
+
+
+
