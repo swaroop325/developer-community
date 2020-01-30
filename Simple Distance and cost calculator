@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+public class dc
+{
+    public static void main(String []args)
+    {
+       Scanner dis = new Scanner(System.in);
+       double distance,cost;
+       System.out.println("Enter the travelling in KMs:");
+       distance = dis.nextDouble();
+       if (distance<0)
+       {
+           System.out.println("invalid distance");
+           System.exit(0);
+       }
+       if (distance>0 && distance<=100)
+       {
+           cost = distance * 5;
+       }
+       else if (distance>100 && distance<=500)
+       {
+           cost = (distance + 10) * 10;
+       }
+       else if (distance>500 && distance<=1000)
+       {
+           cost = (distance + 15) * 15;
+       }
+       else
+       {
+           cost = (distance + 20) * 20;
+       }
+       System.out.println("Travelling cost is " + cost);
+       }
+       }
